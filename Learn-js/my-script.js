@@ -28,12 +28,12 @@ function originalText() {
 
 function lightON() {
 
-    document.getElementById("myImage").src='/JavaScript/images/pic_bulbon.gif';
+    document.getElementById("myImage").src='/images/pic_bulbon.gif';
 }
 
 function lightOFF() {
 
-    document.getElementById("myImage").src='/JavaScript/images/pic_bulboff.gif';
+    document.getElementById("myImage").src='/images/pic_bulboff.gif';
 }
 
 
