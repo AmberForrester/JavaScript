@@ -5,8 +5,6 @@
   body {
     background-color: #f2f2f2;
     font-family: "Helvetica", sans-serif;
-    background-image: url(/Calculators/Age/images/bg2.jpg);
-    background-size: cover;
   }
   
   .container {
@@ -28,29 +26,24 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: 10px 0;
-    margin-left: 70px;
-    width: 80%;
+    width: 100%;
   }
   
   button {
-    background-color: #007aff;
+    background-color: #4caf50;
     color: white;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 30px;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0px 20px;
-    margin-left: 200px;
-    width: auto;
+    margin: 10px 0;
+    width: 100%;
     font-size: 18px;
+    text-transform: uppercase;
     transition: background-color 0.2s ease;
   }
   
   button:hover {
-    background-color: white;
-    color: #007aff;
+    background-color: #45a049;
   }
   
   #total {
@@ -58,20 +51,3 @@
     font-weight: bold;
     margin-top: 10px;
   }
-
-  #result {
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-  }
-
-  #info {
-    text-align: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: 188px;
-    margin-top: 20px;
-  }
-
-  
