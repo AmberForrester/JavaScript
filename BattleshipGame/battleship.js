@@ -1,10 +1,11 @@
 //Here are the 3 location variables. They will hold the location of each cell of the ship. We have set up the ship's location at 3, 4, and 5 for now. 
+var randomLoc = Math.floor (Math.random() * 5) ;
 
-var location1 = 3;
+var location1 = randomLoc;
 
-var location2 = 4;
+var location2 = location1 + 1;
 
-var location3 = 5;
+var location3 = location2 + 1;
 
 //The variable guess won't have a value until the user makes a guess. Until then it will have the value undefined. 
 
