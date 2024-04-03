@@ -45,12 +45,18 @@ class Car {
 
   const myNissan = new Car("Sentra", "Black", "Nissan", "180", "2010");
 
+  const myFord = new Car("Mustang", "Yellow", "Ford", "412", "2024");
+
+  //Create a function that generates the HTML for displaying the car details. 
+
+  //Define a createCarHTML function that takes a car object and returnsthe HTML string for displaying its details - reducing code duplication and makes it easier to manage and update the HTML structure for displaying car details. 
 
   document.getElementById("myCarContainer1").innerHTML = createCarHTML(myHonda);
   document.getElementById("myCarContainer2").innerHTML = createCarHTML(myMazda);
   document.getElementById("myCarContainer3").innerHTML = createCarHTML(myBMW);
   document.getElementById("myCarContainer4").innerHTML = createCarHTML(myAcura);
   document.getElementById("myCarContainer5").innerHTML = createCarHTML(myNissan);
+  document.getElementById("myCarContainer5").innerHTML = createCarHTML(myFord);
 
 
   myHonda.showCarDetails();
@@ -58,3 +64,4 @@ class Car {
   myBMW.showCarDetails();
   myAcura.showCarDetails();
   myNissan.showCarDetails();
+  myFord.showCarDetails();
