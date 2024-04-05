@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Concept of "DRY"</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Classes of Wines for the host</h1>
+
+    <div id="myContainer1"></div>
+
+    <hr />
+
+    <p id="demo"></p>
+    <script>
+      class Product {
+        constructor(type, name, size, color, region, year) {
+          this.type = type;
+          this.name = name;
+          this.size = size;
+          this.color = color;
+          this.region = region;
+          this.year = year;
+        }
+
+        showHtmlDetails() {
+          return `<hr><h2> ${this.type}</h2>
+            <h3>Name: ${this.name}</h3>
+            <h3>Size: ${this.size}</h3>
+            <h3>Color: ${this.color}</h3>
+            <h3>Region: ${this.region}</h3>
+            <h3>Age of the Wine: ${this.age()} years</h3>
+
+
+              `;
+        }
+
+        showDetails() {
+          console.log(
+            "This Wine " +
+              this.type +
+              "is a " +
+              this.model +
+              "\nThe year was made in : " +
+              this.year +
+              "\n its color is :" +
+              this.color +
+              "\nwith a max speed of " +
+              this.maxSpeed
+          );
+        }
+
+        age() {
+          const date = new Date();
+          return date.getFullYear() - this.year;
+        }
+
+        accelerate() {}
+      }
+
+      let html = [];
+
+      const myChardonnay = new Product("Chardonnay", "Oyster Bay Chardonnay", "750ml", "White", "New Zealand", "2022");
+      html.push(myChardonnay.showHtmlDetails());
+
+     
+
+
+      document.getElementById("myContainer1").innerHTML = html.join("");
+    </script>
+
+
+    
+</body>
+</html>
