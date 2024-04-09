@@ -73,7 +73,7 @@ footer p a {
 }
 
 #hero {
-  background-image: url("/job-zila/images/mainPic.jpg");
+  background-image: url("/images/mainPic.jpg");
   background-size: cover;
 
   display: flex;
