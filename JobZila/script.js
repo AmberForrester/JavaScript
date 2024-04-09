@@ -1,4 +1,4 @@
-fetch("job-listing.json") //// Replace with your actual JSON file or API endpoint URL
+fetch("joblistings.js") //// Replace with your actual JSON file or API endpoint URL
   .then((response) => response.json())
   .then((data) => {
     //console.log(data);//testing to see if the data is pickedup from json file or not
