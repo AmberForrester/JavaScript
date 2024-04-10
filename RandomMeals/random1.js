@@ -51,3 +51,4 @@ const createMeal = (meal) => {
 	
 	meal_container.innerHTML = newInnerHTML;
 }
+
