@@ -100,13 +100,94 @@ for (let i = 0; i < users.length; i++) {
 console.log(userIds);
 */
 //With Map
+/*
 const users = [
-    { id: 1, name: "John" },
-    { id: 2, name: "Jane" },
-    { id: 3, name: "Doe" },
-  ];
-  const userIds = users.map((user) => user.id);
-  const useNames = users.map((user) => user.name);
-  
-  console.log(userIds);
-  console.log(useNames);
+  { id: 1, name: "John" },
+  { id: 2, name: "Jane" },
+  { id: 3, name: "Doe" },
+];
+const userIds = users.map((user) => user.id);
+const useNames = users.map((user) => user.name);
+
+console.log(userIds);
+console.log(useNames);
+*/
+/*
+const names = ["Amber", "Suze", "Suzan"];
+console.log(names[0]);
+console.log(names[1]);
+
+const [first, second, third] = names;
+
+console.log(second);
+*/
+//Without Destructing
+//const first = "Amber";
+//const second = "Suze";
+//const third = "Suzan";
+
+//With Destructing
+/*
+const first = "Amber",
+      second = "Suze", 
+      third = "Suzan";
+*/
+/*
+const furniture = ["Table", "Chair", "Fan"];
+
+let a, b, c;
+
+[a, b, c] = furniture;
+
+console.log(a);
+console.log(b);
+console.log(c);
+*/
+/*
+function studentNames() {
+  return ["Amber", "Suze", "Suzan"];
+}
+let a, b, c;
+
+[a, b, c] = studentNames();
+
+console.log(a);
+console.log(b);
+console.log(c);
+*/
+
+/*
+let a, b;
+[a = 2, b = 4] = [];
+console.log(a);
+console.log(b);
+*/
+/*
+let a, b;
+[a = 2, b = 4] = [];
+console.log(a);
+console.log(b);
+*/
+/*
+const [first = "Amber", second = first] = [,];
+console.log(first);
+console.log(second);
+*/
+/*
+//const [fur1 = "rug", fur2 = fur1, fur3 = fur1] = [, "glass"];
+const [fur1 = "Rug", fur2 = fur1, fur3 = fur1] = ["Chair", , "High-Chair"];
+//chair-rug-high
+
+console.log(fur1);
+console.log(fur2);
+console.log(fur3);
+//salah//amber rug-glass-rug
+//suzan undefined-glass-unde
+//Fatimah Rug-rug-rug
+//charline---rug-glass-glass
+//syed---glass-glass -glass
+*/
+
+const [fur1, , fur3] = ["Chair", "Rug", "High-Chair"];
+console.log(fur1);
+console.log(fur3);
