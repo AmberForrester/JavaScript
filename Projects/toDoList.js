@@ -148,7 +148,7 @@ function showTime() {
     " " +
     (hh % 12 || 12) +
     ":" +
-    min +
+    (min < 10 ? 0 + min : min) +
     "  " +
     greeting;
 
