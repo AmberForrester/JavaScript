@@ -1,16 +1,32 @@
-body{
+body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: greenyellow;
-}
+    background-color: #f2f2f2;
+    background-image: url(/images/toDoList.jpg);
+    background-size: cover;
+  }
+
+.clock {
+    position: fixed;
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 40px; 
+    font-family: "Righteous", cursive;
+    letter-spacing: 1px;
+    padding: 30px; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 20px; 
+  }
 
 .form{
     position: absolute;
     top: 30%;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     width: 400px;
-    background-color:yellow;
+    background-color: #cc9c6f;
     border-radius: 10px;
 }
 
@@ -37,13 +53,15 @@ body{
     list-style-type: none;
     padding: 20px;
     font-family: cursive;
+    color: white;
+    font-size: 18px;
     border-top: dotted;
-    border-color: darkgray;
+    border-color: white;
     position: relative;
 }
 
 .list li .fa-trash{
-    color: red;
+    color: #495922;
     position: absolute;
     right: 20px;
     top: 50%;
@@ -51,7 +69,7 @@ body{
     cursor: pointer;
 }
 .list li .fa-check-square{
-    color: green;
+    color: white;
     position: absolute;
     right: 40px;
     top: 50%;
@@ -60,10 +78,10 @@ body{
 }
 
 .list li.checked {
-    color: darkgray;
+    color: black;
     text-decoration: line-through;
 }
 
 .list li.checked .fa-check-square{
-    color: darkgray;
+    color: black;
 }
