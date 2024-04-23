@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Numbers</title>
+</head>
+<body>
+
+    <h1>Removing negative numbers from an array list using the map( ) method</h1>
+
+    <p>The map ( ) method is primarily used for transforming elements of an array to create a callback function.<br>
+        <br>
+        It is not the ideal choice for filtering out elements based on a condition like removing negative numbers.<br>
+        <br>
+        You would use the filter ( ) method instead, but you could combine both methods if you wanted to use map ( ). Together with the filter ( ) method. <br>
+        <br>
+        As shown in the console log - map ( ) is used to create a new array that's identical to the original one and maintains the original array's length and positions. <br>
+        <br>
+        By chaining the filter ( ) method to the mapped array. We can filter out only the elements that are greater than or equal to zero, effectively removing the negative numbers. <br>
+        <br>
+        The filter( ) method on its own works by using this syntax: const positiveNumbers = numbers.filter (num => num >= 0);
+    
+    </p>
+
+
+    <script src="/negativeNumbers.js"></script>
+</body>
+</html>
