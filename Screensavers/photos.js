@@ -52,11 +52,35 @@ function showTime() {
     " " +
     (hh % 12 || 12) +
     ":" +
-    min +
+    (min <10 ? "0" : "") + min + 
     "  " +
     greeting;
 
   document.getElementById("clock").innerText = actualTime;
+}
+
+function updateSlideshow() {
+  const slideshowImage = document.getElementById("slideshow-image");
+  const imageUrls = [
+    "https://source.unsplash.com/collection/9603153/1920x1080" ];
+    
+  let currentIndex = 0;
+
+  setInterval(() => {
+
+    slideshowImage.style.opacity = 0;
+
+    currentIndex = (currentIndex + 1) % imageUrls.length;
+
+    setTimeout(() => {
+      slideshowImage.src = imageUrls[currentIndex];
+
+      slideshowImage.style.opacity = 1;
+
+    }, 5000); 
+
+  }, refreshRate);
+
 }
 
 showTime();
