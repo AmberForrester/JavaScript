@@ -59,12 +59,28 @@ function showTime() {
   document.getElementById("clock").innerText = actualTime;
 }
 
+function preloadImages(imageUrls) {
+
+  imageUrls.forEach(url => {
+
+    const img = new Image();
+
+    img.src = url;
+
+  });
+
+}
+
 function updateSlideshow() {
+
   const slideshowImage = document.getElementById("slideshow-image");
+
   const imageUrls = [
     "https://source.unsplash.com/collection/9603153/1920x1080" ];
-    
+
   let currentIndex = 0;
+
+  preloadImages(imageUrls);
 
   setInterval(() => {
 
