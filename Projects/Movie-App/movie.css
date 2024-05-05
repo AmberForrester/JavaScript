@@ -68,8 +68,7 @@ html {
   }
   
   input[type="search"] {
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
     font-family: inherit;
     font-size: 100%;
     outline: 0px;

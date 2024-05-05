@@ -97,11 +97,3 @@ showMoreButtonEl.addEventListener("click", () => {
   fetchAndDisplayResults(page);
 });
 
-
-
-
-
-
-
-
-

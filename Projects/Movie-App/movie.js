@@ -1,4 +1,4 @@
-const get_movie = (value = "spiderman") => {
+const get_movie = (value = "Criminal Minds") => {
     fetch(`https://api.tvmaze.com/singlesearch/shows?q=${value}&embed=episodes`)
       .then((response) => response.json())
       .then((data) => {
@@ -13,10 +13,10 @@ const get_movie = (value = "spiderman") => {
         }
       })
       .catch((error) => {
-        //Rejected
+        
       })
       .finally(() => {
-        //settled
+        
       });
   };
   
@@ -44,40 +44,25 @@ const get_movie = (value = "spiderman") => {
   
       if (episode.image == null) {
         img.src =
-          "https://static.tvmaze.com/uploads/images/original_untouched/260/651247.jpg";
+          "/images/No_Image_Available.jpg";
       } else {
         img.src = episode.image.original;
       }
   
-      // Append the text node to anchor element.
+      
       link.appendChild(img);
   
-      // Set the title.
+      
       link.title = episode.name;
   
-      // Set the href property.
+      
       link.href = episode.url;
   
-      // Append the anchor element to the body.
+      
       li.appendChild(link);
       episodes_list.appendChild(li);
     });
   
-    /*
-    episode_data.array.forEach((element) => {
-      let li = document.createElement("li");
-      const link = document.createElement("a");
-      const img = document.createElement("img");
-  
-      img.src = element.image.original;
-      link.appendChild(img);
-      link.title = element.name;
-      link.href = element.url;
-      link.appendChild(link);
-  
-      episodes_list.appendChild(li);
-    });
-    */
   };
   
   const create_UI = (data) => {
@@ -103,4 +88,3 @@ const get_movie = (value = "spiderman") => {
   };
   
   get_movie();
-  //create_UI();
